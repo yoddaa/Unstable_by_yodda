@@ -52,7 +52,7 @@ public class CountDown : MonoBehaviour
             seconds = 0;         
             
         }
-        //        fraction = (timeLeft * 100) % 100;
+        
     }
 
     private IEnumerator updateCoroutine()
@@ -61,18 +61,16 @@ public class CountDown : MonoBehaviour
         {
             text.text = string.Format("{0:0}:{1:00}", minutes, seconds);
 
-            // an algorithem for calculating laps between attack/spawning
+            // calculating laps between attack/spawning
             if (Mathf.Floor(timeLeft)% lapsInterval == 0 && Mathf.Floor(timeLeft) != 0)//y
             {
                 itsTimeToSpawn = true;
-                Debug.Log("TRUE____Sec: "+ seconds + "TL:"+ timeLeft);
-                //call for spawning
                 
             }
             else
             {
                 itsTimeToSpawn = false;
-                Debug.Log("false= Sec: " + seconds + "TL:"+ timeLeft);
+               
             }
 
             if (Mathf.Floor(timeLeft) == 0)
