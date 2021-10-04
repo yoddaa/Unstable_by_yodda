@@ -21,12 +21,9 @@ public class Score : MonoBehaviour
 
         if (collision.collider.CompareTag("NPC"))
         {
-            //ContactPoint contact = collision.contacts[0];
-            //Quaternion rotation = Quaternion.FromToRotation(Vector3.up, contact.normal);
-            //Vector3 position = contact.point;
-            //Instantiate(pointsPrefab, position, rotation);
+          
             score++;
-            Debug.Log("Score:"+score.ToString());
+           
             textMP.text = score.ToString();
             scoreP.text = score.ToString();
             // Destroy(gameObject);
