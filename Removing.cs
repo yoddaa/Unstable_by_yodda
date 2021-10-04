@@ -5,10 +5,10 @@ using UnityEngine;
 public class Removing : MonoBehaviour
 {
     public float seconds = 1f;
+    
     // Start is called before the first frame update
     void Start()
     {
-        //Invoke("functionname", seconds);
         Invoke("RemovingIt", seconds);
     }
 
@@ -18,9 +18,4 @@ public class Removing : MonoBehaviour
 
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
 }
