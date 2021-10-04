@@ -18,39 +18,8 @@ public class RNDSpawner : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        //GameObject[] spawnPoints = GameObject.FindGameObjectsWithTag(spawnPointTag);
-
-        //foreach (GameObject spawnPoint in spawnPoints)
-        //{
-
-        //    int randomPrefab = Random.Range(0, prefabsToSpwan.Count);
-
-        //    if (alwaysSpawn)
-        //    {
-        //        GameObject pts = Instantiate(prefabsToSpwan[randomPrefab]);
-        //        pts.transform.position = spawnPoint.transform.position;
-        //    }
-        //    else
-        //    {
-        //        int spawnOrNot = Random.Range(0, 2);
-        //        if (spawnOrNot == 0)
-        //        {
-        //            GameObject pts = Instantiate(prefabsToSpwan[randomPrefab]);
-        //            pts.transform.position = spawnPoint.transform.position;
-        //        }
-        //    }
-        //}
-
         Spawning();
     }
-
-    //void OnGUI()
-    //{
-    //    if (GUI.Button(new Rect(10, 10, 100, 50), "Spawning!"))
-    //    {
-    //        Spawning();
-    //    }
-    //}
 
     // Update is called once per frame
     void Update()
@@ -58,7 +27,7 @@ public class RNDSpawner : MonoBehaviour
         if (countDown.itsTimeToSpawn)
         {
             Spawning();
-            //isNeededToSpawn = false;
+            
         }
     }
 
